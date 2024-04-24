@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* style contant */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../imeges/20180606214625271.jpg);
+    /* background-image: url(../imeges/2018_3_2_14_10_55_432.jpg); */
+    /* background-image: url(../imeges/DwXjjKfW0AEBaSy.jpg_large); */
+    /* background-image: url(../imeges/f011bb880f3a67d129eff1ad11004336.jpg); */
+    /* background-image: url(../imeges/نوران_3.jpg.webp); */
+    /* background-image: url(../imeges/اجمل-15-صور-خلفيات-مساجد-2024-10-576x1024.jpg); */
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+/* .back1{
+    background-image: url(../imeges/2018_3_2_14_10_55_432.jpg);
+}
+.back2{
+    background-image: url(../imeges/_قبة\ الصخرة.jpg);
+}
+.back3{
+    background-image: url(../imeges/DstyQyRXQAID85T.jpg);
+}
+.back4{
+    background-image: url(../imeges/DwXjjKfW0AEBaSy.jpg_large);
+}
+.back5{
+    background-image: url(../imeges/f011bb880f3a67d129eff1ad11004336.jpg);
+}
+.back6{
+    background-image: url(../imeges/pngtree-pictures-of-mosques-with-beautiful-nature-picture-image_2681353.jpg);
+}
+.back7{
+    background-image: url(../imeges/اجمل-15-صور-خلفيات-مساجد-2024-10-576x1024.jpg);
+}
+.back8{
+    background-image: url(../imeges/نوران_3.jpg.webp);
+} */
+/* style content left */
+.content .content-left {
+    width: 80%;
+    padding: 20px 10px 0;
+}
+
+.content .content-left header p {
+    font-size: 30px;
+}
+
+.content .content-left .timeAdan {
+    text-align: center;
+    padding: 30px 0;
+}
+.content .content-left .timeAdan .titel #citi{
+    font-size: 30px;
+}
+.content .content-left .timeAdan .day{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.content .content-left .timeAdan .cont-time-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.content .content-left .timeAdan .card-time {
+    width: 16%;
+    background-color: rgba(48, 135, 135, 0.5);
+    border: saddlebrown solid 2px;
+    border-radius: 15px;
+    text-align: center;
+}
+.content .content-left .timeAdan .card-time .card{
+    font-size: 30px;
+}
+.content .content-left .timeAdan .card-time:hover{
+    background-color: rgba(228, 235, 240, 0.5);
+}
+
+/* style footer */
+.content .content-left footer {
+    background-color: rgba(48, 135, 135, 0.5);
+    border-top: saddlebrown solid 2px;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.content .content-left footer .flix {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 30px 0;
+    font-size: 20px;
+}
+
+.content .content-left footer .gefawy{
+    font-size: 40px;
+}
+@media(max-width:900px) {
+    .content .content-left {
+        width: 75%;
+        padding: 15px 7px 0;
+    }
+    .content .content-left .timeAdan .cont-time-card {
+        display: grid;
+        padding: inherit;
+        grid-template-columns: repeat;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .content .content-left .timeAdan .card-time {
+        width: 100%;
+    }
+}
+@media(max-width:500px) {
+
+    
+    .content .content-left header p {
+        font-size: 20px;
+    }
+    
+    .content .content-left .timeAdan {
+        padding: 25px 0;
+    }
+    .content .content-left .timeAdan .titel #citi{
+        font-size: 20px;
+    }
+    .content .content-left .timeAdan .day{
+        display: block;
+    }
+    .content .content-left .timeAdan .cont-time-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 0;
+    }
+    
+    .content .content-left .timeAdan .card-time .card{
+        font-size: 20px;
+    }
+
+    
+    /* style footer */
+    .content .content-left footer {
+        padding: 25px 7px;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .content .content-left footer .flix {
+        display: block;
+        padding: 0 0 25px 0;
+        font-size: 15px;
+    }
+    
+    .content .content-left footer .gefawy{
+        font-size: 30px;
+    }
+}
+/*-------------------- style content rite ----------------------------*/
+.content #content-rite {
+    width: 20%;
+    background-color: rgba(48, 135, 135, 0.5);
+    border-left: saddlebrown solid 2px;
+    text-align: center;
+}
+
+.content #content-rite div {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.content #content-rite div select{
+    padding: 5px 40px;
+    border-radius: 31px;
+    border: saddlebrown solid 2px;
+    background-color: inherit;
+}
+@media(max-width:900px) {
+    .content #content-rite {
+        width: 25%;
+    }
+    .content #content-rite div {
+        width: 100%;
+    }
+    .content #content-rite div select{
+        width: 95%;
+        padding: inherit;
+    }
+}
